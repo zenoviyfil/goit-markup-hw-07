@@ -11,16 +11,18 @@ $svg-color: #afb1b8;
 $header-border-color: #ececec;
 $background-img-color: #eeeeee;
 
-.active::after {
-  position: absolute;
-  content: "";
-  width: 48px;
-  height: 4px;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 2px;
-  background-color: $link-color;
+.active {
+  &::after {
+    position: absolute;
+    content: "";
+    width: 48px;
+    height: 4px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2px;
+    background-color: $link-color;
+  }
 }
 
 .section__header {
