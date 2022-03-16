@@ -1,4 +1,4 @@
-.flex-container {
+.flex__container {
   display: flex;
   align-items: baseline;
 }
@@ -16,7 +16,7 @@ footer {
   margin-left: auto;
 }
 
-.logo-link-footer {
+.footer__logo__link {
   font-family: Raleway;
   font-size: 26px;
   font-weight: bold;
@@ -26,11 +26,11 @@ footer {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-item-footer {
+.footer__contacts__item {
   margin-top: 9px;
 }
 
-.address-container {
+.address__container {
   margin-right: 70px;
 }
 
@@ -44,8 +44,8 @@ footer {
   margin-top: 20px;
 }
 
-.mail-link-footer,
-.tel-link-footer {
+.mail__link__footer,
+.tel__link__footer {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -56,7 +56,7 @@ footer {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-header {
+.social__header {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -66,30 +66,32 @@ footer {
   color: $white-color;
 }
 
-.social-footer-list {
+.footer__social__list {
   display: flex;
   list-style-type: none;
   margin-top: 20px;
 }
 
-.social-footer-item {
+.footer__social__item {
   width: 44px;
   height: 44px;
   margin-right: 10px;
   border-radius: 50%;
 }
 
-.social-footer-item:last-child {
-  margin-right: 0;
+.footer__social__item {
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
-.social-list-footer-icon {
+.footer__social__icon {
   width: 20px;
   height: 20px;
   fill: $white-color;
 }
 
-.social-footer-item {
+.footer__social__item {
   a {
     display: flex;
     width: 44px;
@@ -103,7 +105,7 @@ footer {
   }
 }
 
-.social-footer-item {
+.footer__social__item {
   a {
     &:hover,
     &:focus {
@@ -114,16 +116,16 @@ footer {
   }
 }
 
-.footer-submit-area {
+.footer__submit {
   margin-left: auto;
 }
 
-.submit-area {
+.footer__submit__area {
   display: flex;
   margin-top: 20px;
 }
 
-.footer-submit {
+.footer__submit__input {
   width: 358px;
   height: 50px;
   margin-right: 12px;
@@ -135,7 +137,7 @@ footer {
   border-radius: 4px;
 }
 
-.footer-btn {
+.footer__submit__btn {
   width: 200px;
   height: 50px;
   padding: 10px 28px;
@@ -155,14 +157,14 @@ footer {
   border: none;
 }
 
-.send-icon {
+.footer__submit__btn__icon {
   width: 24px;
   height: 24px;
   fill: $white-color;
 }
 
-a.mail-link-footer,
-a.tel-link-footer {
+a.mail__link__footer,
+a.tel__link__footer {
   &:hover,
   &:focus {
     color: $link-color;

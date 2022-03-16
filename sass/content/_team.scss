@@ -1,8 +1,8 @@
-.team-section {
+.team__section {
   background-color: $filter-btn-color;
 }
 
-.container-team {
+.team__container {
   display: block;
 }
 
@@ -12,7 +12,7 @@
 }
 
 .team {
-  .team-card {
+  .team__card {
     width: 270px;
     margin-right: 30px;
     background-color: $white-color;
@@ -40,11 +40,11 @@
   }
 }
 
-.person-description {
+.person__description {
   padding: 30px 32px;
 }
 
-.person-name {
+.person__name {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -53,7 +53,7 @@
   text-align: center;
 }
 
-.person-profession {
+.person__profession {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   font-size: 16px;
@@ -63,18 +63,18 @@
   text-align: center;
 }
 
-.social-list {
+.social__list {
   display: flex;
   margin-top: 16px;
   justify-content: space-between;
 }
 
-.social-list-item {
+.social__list__item {
   list-style-type: none;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-list-item {
+.social__list__item {
   &:hover,
   &:focus {
     fill: $link-color;
@@ -82,17 +82,17 @@
   }
 }
 
-.social-list-item {
+.social__list__item {
   margin-right: 10px;
 }
 
-.social-list-item {
+.social__list__item {
   &:last-child {
     margin-right: 0;
   }
 }
 
-.social-list-item {
+.social__list__item {
   a {
     display: flex;
     align-items: center;
@@ -105,18 +105,18 @@
   }
 }
 
-.social-list-icon {
+.social__list__icon {
   width: 20px;
   height: 20px;
   fill: $svg-color;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-list-item {
+.social__list__item {
   a {
     &:hover,
     &:focus {
-      .social-list-icon {
+      .social__list__icon {
         fill: $white-color;
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
       }
@@ -124,7 +124,7 @@
   }
 }
 
-.social-list-item {
+.social__list__item {
   a {
     &:hover,
     &:focus {

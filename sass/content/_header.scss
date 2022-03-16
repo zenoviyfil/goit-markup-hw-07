@@ -2,20 +2,20 @@
   border-bottom: 1px solid $header-border-color;
 }
 
-.nav-menu {
+.nav__menu {
   align-items: center;
 }
-.nav-list {
+.nav__menu__list {
   display: flex;
 }
 
-.nav-list {
+.nav__menu__list {
   li {
     margin-right: 50px;
   }
 }
 
-.nav-list {
+.nav__menu__list {
   li:nth-child(3n) {
     margin-right: 0;
   }
@@ -39,9 +39,9 @@
   }
 }
 
-.index-link,
-.portfolio-link,
-.contacts-link {
+.index__link,
+.portfolio__link,
+.contacts__link {
   position: relative;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -55,8 +55,8 @@
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mail-link-header,
-.tel-link-header {
+.mail__link__header,
+.tel__link__header {
   display: flex;
   align-items: center;
   font-family: "Roboto", sans-serif;
@@ -86,8 +86,8 @@
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-a.index-link,
-a.index-link {
+a.index__link,
+a.index__link {
   &:hover,
   &:focus {
     color: $link-color;
@@ -95,8 +95,8 @@ a.index-link {
   }
 }
 
-a.portfolio-link,
-a.portfolio-link {
+a.portfolio__link,
+a.portfolio__link {
   &:hover,
   &:focus {
     color: $link-color;
@@ -104,8 +104,8 @@ a.portfolio-link {
   }
 }
 
-a.contacts-link,
-a.contacts-link {
+a.contacts__link,
+a.contacts__link {
   &:hover,
   &:focus {
     color: $link-color;
@@ -113,18 +113,8 @@ a.contacts-link {
   }
 }
 
-a.mail-link-header,
-a.mail-link-header {
-  &:hover,
-  &:focus {
-    color: $link-color;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-}
-
-a.tel-link-header,
-a.tel-link-header {
+a.mail__link__header,
+a.mail__link__header {
   &:hover,
   &:focus {
     color: $link-color;
@@ -133,8 +123,18 @@ a.tel-link-header {
   }
 }
 
-a.mail-link-header,
-a.mail-link-header {
+a.tel__link__header,
+a.tel__link__header {
+  &:hover,
+  &:focus {
+    color: $link-color;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+a.mail__link__header,
+a.mail__link__header {
   &:hover .envelope,
   &:focus .envelope {
     fill: $link-color;
@@ -143,8 +143,8 @@ a.mail-link-header {
   }
 }
 
-a.tel-link-header,
-a.tel-link-header {
+a.tel__link__header,
+a.tel__link__header {
   &:hover .smartphone,
   &:focus .smartphone {
     fill: $link-color;

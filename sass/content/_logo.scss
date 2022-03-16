@@ -1,4 +1,4 @@
-.logo-link {
+.logo__link {
   font-family: Raleway;
   font-size: 26px;
   font-weight: bold;
@@ -11,15 +11,15 @@
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.color-logo-link-header {
+.header__logo__link__color {
   color: $black-color;
 }
 
-.color-logo-link-footer {
+.footer__logo__link__color {
   color: $white-color;
 }
 
-.logo-link {
+.logo__link {
   &:hover,
   &:focus {
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);

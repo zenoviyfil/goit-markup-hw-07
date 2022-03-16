@@ -9,16 +9,16 @@
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-hidden {
+.backdrop.is__hidden {
   opacity: 0;
   pointer-events: none;
 }
 
-.backdrop.is-hidden .modal {
+.backdrop.is__hidden .modal {
   transform: translate(-50%, -50%) scale(0.9);
 }
 
-.modal {
+.backdrop__modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -32,7 +32,7 @@
   border-radius: 4px;
 }
 
-.close-btn {
+.modal__close__btn {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -47,15 +47,15 @@
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-btn {
-  .close {
+.modal__close__btn {
+  .close__btn__icon {
     width: 11px;
     height: 11px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
-.close-btn {
+.modal__close__btn {
   &:hover,
   &:focus {
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -63,7 +63,7 @@
   }
 }
 
-.modal-header {
+.modal__header {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 20px;
@@ -73,23 +73,23 @@
   color: $principal-text-color;
 }
 
-.inputs-container {
+.inputs__container__list {
   list-style: none;
   margin-top: 12px;
 }
 
-.inputs-container-item {
+.inputs__container__item {
   margin-top: 10px;
 }
 
-.inputs-container-item {
+.inputs__container__item {
   &:first-child {
     margin-top: 0;
   }
 }
 
-.inputs-container-item {
-  .form-label {
+.inputs__container__item {
+  .inputs__form__label {
     font-family: "Roboto";
     font-weight: 400;
     font-size: 12px;
@@ -99,8 +99,8 @@
   }
 }
 
-.inputs-container-item {
-  .form-input {
+.inputs__container__item {
+  .inputs__form__input {
     width: 100%;
     height: 40px;
     margin-top: 4px;
@@ -111,8 +111,8 @@
   }
 }
 
-.inputs-container-item {
-  textarea {
+.inputs__container__item {
+  .inputs__textarea {
     width: 100%;
     height: 120px;
     margin-top: 4px;
@@ -123,7 +123,7 @@
   }
 }
 
-.inputs-container-item {
+.inputs__container__item {
   textarea::placeholder {
     font-family: "Roboto";
     font-weight: 400;
@@ -134,7 +134,7 @@
   }
 }
 
-.policy-checkbox {
+.policy__checkbox {
   position: relative;
   width: 425px;
   margin-top: 20px;
@@ -144,7 +144,7 @@
   margin-left: auto;
 }
 
-.checkbox {
+.policy__checkbox__icon {
   position: absolute;
   width: 16px;
   height: 15px;
@@ -155,20 +155,20 @@
   border-radius: 2px;
 }
 
-.checkbox-input {
-  &:checked + .checkbox {
+.policy__checkbox__input {
+  &:checked + .policy__checkbox__icon {
     background-color: $link-color;
     background-origin: border-box;
     border: transparent;
   }
 }
 
-.checkbox-input {
+.policy__checkbox__input {
   appearance: none;
 }
 
-.policy-checkbox {
-  .checkbox-label {
+.policy__checkbox {
+  .policy__checkbox__label {
     font-family: "Roboto";
     font-weight: 400;
     font-size: 14px;
@@ -179,7 +179,7 @@
   }
 }
 
-.policy-doc {
+.policy__doc {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
@@ -189,7 +189,7 @@
   color: $link-color;
 }
 
-.modal-btn {
+.modal__send__btn {
   display: flex;
   font-family: inherit;
   font-weight: bold;
@@ -206,43 +206,43 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.inputs-container-item {
-  .name {
+.inputs__container__item {
+  .inputs__icon__name {
     position: absolute;
     width: 12px;
     height: 12px;
-    top: 105px;
+    top: 107px;
     left: 56px;
     transform: translateY(+50%);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
-.inputs-container-item {
-  .tel {
+.inputs__container__item {
+  .inputs__icon__tel {
     position: absolute;
     width: 13px;
     height: 13px;
-    top: 177px;
+    top: 180px;
     left: 56px;
     transform: translateY(+50%);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
-.inputs-container-item {
-  .email {
+.inputs__container__item {
+  .inputs__icon__email {
     position: absolute;
     width: 15px;
     height: 12px;
-    top: 250px;
+    top: 253px;
     left: 56px;
     transform: translateY(+50%);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
-.form-input {
+.inputs__form__input {
   &:focus {
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     outline: $link-color;
@@ -256,35 +256,35 @@
   }
 }
 
-.textarea {
+.inputs__textarea {
   &:focus {
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     outline: $link-color;
   }
 }
 
-.form-input {
-  &:focus + .name {
+.inputs__form__input {
+  &:focus + .inputs__icon__name {
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: $link-color;
   }
 }
 
-.form-input {
-  &:focus + .tel {
+.inputs__form__input {
+  &:focus + .inputs__icon__tel {
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: $link-color;
   }
 }
 
-.form-input {
-  &:focus + .email {
+.inputs__form__input {
+  &:focus + .inputs__icon__email {
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: $link-color;
   }
 }
 
-.form-input {
+.inputs__form__input {
   &:focus {
     cursor: pointer;
     border: 1px solid $link-color;

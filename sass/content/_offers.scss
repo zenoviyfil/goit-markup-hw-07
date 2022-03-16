@@ -1,20 +1,20 @@
-.offer-section {
+.offers__section {
   padding-top: 0;
   padding-bottom: 94px;
 }
 
-.container-offer {
+.offers__container {
   display: block;
 }
 
-.offers {
+.offers__list {
   display: flex;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
 }
 
-.offer-item {
+.offers__list__item {
   position: relative;
   display: block;
   max-width: 100%;
@@ -22,13 +22,13 @@
   margin-right: 30px;
 }
 
-.offer-item {
+.offers__list__item {
   &:nth-child(3n) {
     margin-right: 0;
   }
 }
 
-.offer-item {
+.offers__list__item {
   img {
     display: block;
     width: 100%;
@@ -36,7 +36,7 @@
   }
 }
 
-.offer-item-description {
+.offers__list__item__description {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;

@@ -1,18 +1,18 @@
-.qualities {
+.container__qualities {
   display: flex;
 }
 
-.qualities-item {
+.qualities__item {
   width: 270px;
 }
 
-.qualities-item {
+.qualities__item {
   &:nth-child(-n + 3) {
     margin-right: 30px;
   }
 }
 
-.qualities-description-header {
+.qualities__description__header {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 14px;
@@ -22,7 +22,7 @@
   margin-top: 30px;
 }
 
-.qualities-description-text {
+.qualities__description__text {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   font-size: 14px;
@@ -32,7 +32,7 @@
   margin-top: 10px;
 }
 
-.qualities-list-item {
+.qualities__list__item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,8 +43,7 @@
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.qualities-list-item,
-.qualities-list-item {
+.qualities__list__item {
   &:hover,
   &:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -53,7 +52,7 @@
   }
 }
 
-.qualities-svg-icon {
+.qualities__svg__icon {
   width: 70px;
   height: 70px;
 }

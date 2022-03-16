@@ -23,7 +23,7 @@ $background-img-color: #eeeeee;
   background-color: $link-color;
 }
 
-.section-header {
+.section__header {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 36px;
@@ -32,6 +32,6 @@ $background-img-color: #eeeeee;
   text-align: center;
 }
 
-.project-container {
+.project__container {
   display: block;
 }
